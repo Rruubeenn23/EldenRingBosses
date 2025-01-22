@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elden Ring Bosses</title>
+    <link rel="stylesheet" href="static/css/base.css">
+    <script defer src="static/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="icon" href="https://cdn2.steamgriddb.com/icon/7316e11fe78963395fbab4a85d0b8f85/32/256x256.png">
+</head>
+<body>
+    <header>
+        <h1>Elden Ring Bosses</h1>
+        <div>
+            <input type="text" id="search-input" placeholder="Buscar por nombre...">
+            <button id="refresh-btn">Recargar Datos</button>
+            <button id="dlc">Bosses del DLC</button>
+            <button id="ver-api">Ver API </button>
+        </div>
+    </header>
+    
+    <main>
+        <section id="bosses-container">
+            <h2>Lista de Jefes</h2>
+            <div id="bosses-list"></div>
+        </section>
+        <section id="chart-container">
+            <canvas id="bosses-chart"></canvas>
+        </section>
+    </main>
+    <footer>
+        <p>Creado por un fanático de Elden Ring 🌟</p>
+    </footer>
+</body>
+</html>
