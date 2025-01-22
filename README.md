@@ -26,13 +26,23 @@ La aplicación se divide en dos partes:
 ```
 EldenRingBosses/
 │
-├── backend/
-│   └── app.py                # Archivo de la aplicación Flask (Backend)
+├──app.py                # Archivo de la aplicación Flask (Backend)
 │
-├── frontend/
-│   ├── index.html            # Página HTML principal (Frontend)
-│   ├── script.js             # Archivo JavaScript que maneja la lógica del frontend
-│   └── style.css             # Estilos CSS para la interfaz de usuario
+├── templates/
+│   ├── base.html            # Página HTML del juego base (Frontend)
+│   ├── dlc.html            # Página HTML del DLC (Frontend)
+│
+├── static/
+│   ├── css
+│   │    ├── base.css             # Estilos CSS para la interfaz de usuario del juego base
+│   │    └── base.css             # Estilos CSS para la interfaz de usuario del DLC
+│
+│   ├── js
+│   │   ├── main.js             # Archivo JavaScript que maneja la lógica del frontend del juego base
+│   │   └── dlc.js             # Archivo JavaScript que maneja la lógica del frontend del DLC
+│
+│   ├── cursor
+│    │   ├── cursor.cur        #Cursor personalizado
 │
 └── README.md                 # Este archivo
 ```
